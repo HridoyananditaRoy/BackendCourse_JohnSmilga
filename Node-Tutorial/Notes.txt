@@ -1,0 +1,58 @@
+//No window obj
+//No Browser
+
+//Global var -> anywhere in my app i can use them
+
+//__dirname - path to current directory
+//__filename - file name
+//require
+//module
+//process
+
+setInterval(()=>{
+    console.log('hello world')
+},1000)
+
+////we need to store dependencies or info about our project 
+
+//nodemon - it auto starts our backend
+
+// ### 🔁 JavaScript Event Loop – Summary
+
+// * **JS is single-threaded and synchronous by default** – runs code line by line.
+// * **But it's also non-blocking and event-driven** – can offload tasks to the background.
+// * The **event loop** is a mechanism that:
+
+//   * Continuously checks for async tasks/events.
+//   * Executes callbacks when they're ready (e.g., from `setTimeout`, `setInterval`, Promises).
+// * **Offloading** means JS can delegate long tasks without blocking the main thread.
+// * Tools like `setTimeout`, `setImmediate`, `process.nextTick` help achieve async behavior.
+
+// ✅ Result: Efficient handling of asynchronous code without freezing the UI.
+// ### 🔁 JavaScript Event Loop – Example 
+// ```javascript
+// console.log('Start'); 
+// setTimeout(() => {
+//   console.log('Timeout 1');
+// }, 0);
+// setTimeout(() => {
+//   console.log('Timeout 2');
+// }, 1000);
+// console.log('End');
+// ```
+// **Output:**
+// ```
+// Start
+// End
+// Timeout 1    
+// Timeout 2
+// ```
+
+//Asynchronous code doesnt block the execution of the code
+//The event loop is a mechanism that allows js to perform non-blocking operations
+
+//Synchronous code is executed in the background
+//The event loop is a single thread that runs in the background and checks for tasks to execute
+
+//If we use callback it gets messy
+//We can use promises to handle asynchronous code in a more readable way
