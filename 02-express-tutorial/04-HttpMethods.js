@@ -1,3 +1,10 @@
+//HTtP Methods
+//GET, POST, PUT, DELETE, PATCH
+//GET - READ DATA
+//POST - INSERT DATA
+//PUT - UPDATE DATA
+//DELETE - DELETE DATA
+
 console.log('Express Tutorial');
 
 const http = require('http');
